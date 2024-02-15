@@ -17,6 +17,7 @@ div.style.border = "black";
 div.style.background = "pink";
 
 body.appendChild(div);
+
 const h1 = document.createElement('h3');
 h1.textContent = "I'm in a div";
 
@@ -26,3 +27,7 @@ const p2 = document.createElement('h3');
 p2.textContent = "Me too!";
 
 div.appendChild(p2);
+
+btn.addEventListener('click', function (e) {
+    console.log(e);
+  });
