@@ -14,3 +14,9 @@ const text = document.createTextNode(" — the premier source for web developmen
 
 const linkPara = document.querySelector("p");
 linkPara.appendChild(text);
+sect.appendChild(linkPara);
+para.style.color = "white";
+para.style.backgroundColor = "black";
+para.style.padding = "10px";
+para.style.width = "250px";
+para.style.textAlign = "center";
