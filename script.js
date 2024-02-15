@@ -32,10 +32,20 @@
 // btn.onclick = () => alert("Hello World");
 
 
-btn.addEventListener('click', () => {
-  alert("Hello World");
-});
 
+  const btn = document.querySelector('#btn')
+
+  function alertFunction() {
+    alert("YAY! YOU DID IT!");
+  }
+  
+  
+  // METHOD 3
+  btn.addEventListener('click', alertFunction);
+  
+  btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
 // btn.addEventListener('click', function (e) {
 //     console.log(e.div);
 //   });
